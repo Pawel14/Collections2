@@ -22,14 +22,14 @@ public class MapyPracownik {
         System.out.print("\nwpisz klucz: ");
         String s = ss.nextLine();
         System.out.println("osoba o wpisanym indeksie to : "+pracownik.get(s.toLowerCase()));
-//
-//        String idFromUser =scaner.next();
-//        Set<String> keySet = pracownik.keySet();
-//        for (String key: keySet) {
-//            if (idFromUser.equalsIgnoreCase(key)){
-//            System.out.println(pracownik.get(key));
-//            }
-//        }
+
+        String idFromUser =ss.next();
+        Set<String> keySet = pracownik.keySet();
+        for (String key: keySet) {
+            if (idFromUser.equalsIgnoreCase(key)){
+            System.out.println(pracownik.get(key));
+            }
+        }
 
 
 
